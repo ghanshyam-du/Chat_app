@@ -20,9 +20,9 @@ export async function signup(req, res) {
             return res.status(400).json({ message: "Invalid email format" });
         }
 
-        const existingUser = await User.findOne({email});
-        if(existingUser){
-            return res.status(400).json({message : "Email already exists, please use a differnet mail"});
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ message: "Email already exists, please use a differnet mail" });
         }
 
         const idx = Math.floor(Math.random() * 100) + 1;
