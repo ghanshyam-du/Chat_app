@@ -28,8 +28,8 @@ export async function signup(req, res) {
         }
 
         const idx = Math.floor(Math.random() * 100) + 1;
-        // const randomAvatar = `https://avatar.iran.liara.run/public/${idx}.png`    
-        const randomAvatar = `https://banner2.cleanpng.com/20180524/jas/kisspng-arpita-classes-android-studio-single-handedly-${idx}.jpg`
+        const randomAvatar = `https://avatar.iran.liara.run/public/${idx}.png`;
+
         const newUser = await User.create({
             email,
             fullName,
