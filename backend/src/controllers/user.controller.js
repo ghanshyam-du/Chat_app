@@ -110,6 +110,8 @@ export async function acceptFriendRequest(req,res) {
 
 
         // add each user to the other's friends array 
+
+        // $addToSet: adds elements to an array only if they do not already exist.
         await User.findByIdAndUpdate(friendRequest.sender,{
             $addToSet: {friends: friendRequest.recipient},
         })
@@ -118,7 +120,7 @@ export async function acceptFriendRequest(req,res) {
             $addToSet: {friends: friendRequest.sender},
 
         })
-        
+        res.status(200).json({message: "Friend request accepted"}); 
     } catch (error) {
         console.log("Error in acceptFriendReqest controller",error.message);
         res.status(500).json({message: "Internal Server Error"});
