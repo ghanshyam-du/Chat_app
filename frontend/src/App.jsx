@@ -8,11 +8,12 @@ import CallPage from "./pages/CallPage.jsx";
 import ChatPage from "./pages/ChatPage.jsx";
 import OnboardingPage from "./pages/OnboardingPage.jsx";
 
-import { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
     <div className="h-screen" data-theme="forest">
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUpPage />} />
@@ -23,6 +24,8 @@ const App = () => {
         <Route path="/onboarding" element={<OnboardingPage />} />
 
       </Routes>
+      
+      
     </div>
   )
 }
