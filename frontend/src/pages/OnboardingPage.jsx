@@ -3,7 +3,7 @@ import useAuthUser from "../hooks/useAuthUser"
 import { QueryClient, useMutation, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import {completeOnboarding} from "../lib/api"
-import { CameraIcon } from "lucide-react";
+import { CameraIcon, ShuffleIcon } from "lucide-react";
 
 
 const OnboardingPage = () => {
@@ -34,6 +34,7 @@ const OnboardingPage = () => {
     onboardingMutation(formState);
   }
   
+  const handleRandomAvatar = ()=> {};
 
 
   return (
@@ -56,6 +57,13 @@ const OnboardingPage = () => {
                   </div>
                 )
               }
+            </div>
+
+            <div className="flex items-center gap-2 ">
+              <button type="button" onClick={handleRandomAvatar} className="btn btn-acccent">
+                <ShuffleIcon className="size-4 mr-2"/>
+                Generate Random Avatar
+              </button>
             </div>
 
           </div>
