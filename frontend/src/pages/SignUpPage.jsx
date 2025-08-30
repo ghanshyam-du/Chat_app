@@ -35,7 +35,7 @@ const SignUpPage = () => {
         <div className="w-full lg:w-1/2 p-4 sm:p-8 flex flex-col">
           {/* LOGO*/}
                 <div className="mb-4 flex items-center justify-start gap-2">
-                <ShipWheelIcon className="size-9 text-primary" />
+                <img src= "/logo.svg" className="h-20 w-20"/>
                 <span className='text-3xl font-bold font-["Libertinus_Keyboard"] bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider'>
                   CHITCHAT
                 </span>
@@ -126,9 +126,9 @@ const SignUpPage = () => {
 
                 <div className='text-center mt-4'>
                   <p className='text-sm'>
-                    Already have an account?{""}
-                    <Link to="/login" className="text-primary hover:underline">
-                    Sign in
+                    Already have an account?{" "}
+                    <Link to="/login" className="text-primary hover:underline font-['Libertinus_Keyboard']">
+                    SIGNIN
                     </Link>
                   </p>
                 </div>
