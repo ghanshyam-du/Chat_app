@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.libertinus-keyboard-regular {
+    font-family: "Libertinus Keyboard", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
