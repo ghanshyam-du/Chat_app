@@ -6,6 +6,7 @@ import {useMutation, useQueryClient} from "@tanstack/react-query"
 import {axiosInstance} from "../lib/axios"
 // import { signup } from '../../../backend/src/controllers/auth.controller';
 import { signup } from '../lib/api';
+Image
 
 const SignUpPage = () => {
   const [singupData, setSignupData] = useState({
