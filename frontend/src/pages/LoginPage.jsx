@@ -116,11 +116,18 @@ const LoginPage = () => {
         </div>
 
         {/* IMAGE SECTION */}
-        <div className="hidden lg:flex w-full lg:w-1/2 bg-primary/10 items-center justify-center">
+        <div className="hidden lg:flex w-full lg:w-1/2 bg-primary/50 items-center justify-center">
           <div className="max-w-md p-8">
             {/* Illustration */}
             <div className="relative aspect-square max-w-sm mx-auto">
-              <img src="/signup.png" alt="Language connection illustration" className="w-full h-full" />
+              <video 
+                src="/social.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                alt="Language connection illustration" 
+                className="w-full h-full mix-blend-multiply"
+              />
             </div>
 
             <div className="text-center space-y-3 mt-6">
