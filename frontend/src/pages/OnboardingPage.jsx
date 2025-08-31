@@ -49,7 +49,7 @@ const OnboardingPage = () => {
     <div className="min-h-screen bg-base-100 flex items-center justify-center p-4">
       <div className="card bg-base-200 w-full max-w-3xl shadow-xl">
         <div className="card-body p-6 sm:p-8">
-          <h1 className="text-2xl font-bold font-['Libertinus_Keyboard'] bg-gradient-to-r from-green-600 to-green-300 text-transparent bg-clip-text sm:text-3xl text-center mb-6">Complete Your Profile</h1>
+          <h1 className="text-2xl font-bold font-['Libertinus_Keyboard'] bg-gradient-to-r from-green-600 to-green-300 text-transparent bg-clip-text sm:text-3xl text-center mb-6">COMPLETE YOUR PROFILE</h1>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* PROFILE PIC CONTAINER */}
@@ -174,7 +174,7 @@ const OnboardingPage = () => {
               {!isPending ? (
                 <>
                   <ShipWheelIcon className="size-5 mr-2" />
-                  Complete Onboarding
+                  COMPLETE ONBOARDING
                 </>
               ) : (
                 <>
