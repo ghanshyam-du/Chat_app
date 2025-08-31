@@ -140,14 +140,24 @@ const SignUpPage = () => {
         </div>
 
         {/* Signup form - right side */}
-        <div className='hidden lg:flex w-full lg:w-1/2 bg-primary/10 items-center justify-center'>
-          <div className='max-w-md p-8'>
-            <div className='relative aspect-square max-w-sm mx-auto'>
-              <img src="/signup.png" alt="Language connection illustration " className='w-full h-full' />
+        {/* IMAGE SECTION */}
+        <div className="hidden lg:flex w-full lg:w-1/2 bg-primary/50 items-center justify-center">
+          <div className="max-w-md p-8">
+            {/* Illustration */}
+            <div className="relative aspect-square max-w-sm mx-auto">
+              <video 
+                src="/social.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                alt="Language connection illustration" 
+                className="w-full h-full mix-blend-multiply"
+              />
             </div>
-            <div className='text-center space-y-3 mt-6 '>
-              <h2 className='text-xl font-semibold'>Connect with people worldwide</h2>
-              <p className='opacitry-70'>
+
+            <div className="text-center space-y-3 mt-6">
+              <h2 className="text-xl font-semibold">Connect with language partners worldwide</h2>
+              <p className="opacity-70">
                 Practice conversations, make friends, and improve your language skills together
               </p>
             </div>
